@@ -16,17 +16,23 @@
 				},
 			]
 			m_hOverrideMaterial = resource:"materials/models/particle/sphere_fire2.vmat"
-			m_bIgnoreNormal = true
+			m_bOrientZ = true
+			m_nLOD = 1
+			m_bAnimated = true
+			m_bSuppressTint = true
 		},
 	]
 	m_Operators = 
 	[
 		{
-			_class = "C_OP_BasicMovement"
-		},
-		{
 			_class = "C_OP_Decay"
 			m_nOpEndCapState = 1
+		},
+		{
+			_class = "C_OP_PositionLock"
+		},
+		{
+			_class = "C_OP_BasicMovement"
 		},
 		{
 			_class = "C_OP_SpinUpdate"
@@ -40,17 +46,22 @@
 			m_ColorFadeMin = [ 246, 138, 138, 255 ]
 			m_ColorFadeMax = [ 244, 165, 91, 255 ]
 		},
+		{
+			_class = "C_OP_DistanceToCP"
+			m_nFieldOutput = 7
+			m_flInputMax = 400.0
+			m_flOutputMax = 0.5
+			m_nStartCP = 1
+		},
 	]
 	m_Initializers = 
 	[
 		{
 			_class = "C_INIT_RandomLifeTime"
-			m_fLifetimeMax = 1.0
-			m_fLifetimeMin = 1.0
-		},
-		{
-			_class = "C_INIT_RandomSequence"
-			m_nSequenceMax = 4
+			m_fLifetimeMax = 30.0
+			m_fLifetimeMin = 30.0
+			m_flOpTimeOffsetMax = 1.0
+			m_flOpStrengthMinScale = 0.0
 		},
 		{
 			_class = "C_INIT_RandomRadius"
@@ -71,7 +82,6 @@
 		},
 		{
 			_class = "C_INIT_CreateWithinSphere"
-			m_fRadiusMax = 1.0
 		},
 		{
 			_class = "C_INIT_RandomColor"
@@ -82,7 +92,8 @@
 	m_Emitters = 
 	[
 		{
-			_class = "C_OP_NoiseEmitter"
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 1
 		},
 	]
 	m_controlPointConfigurations = 
