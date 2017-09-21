@@ -22,6 +22,9 @@
 	m_Operators = 
 	[
 		{
+			_class = "C_OP_BasicMovement"
+		},
+		{
 			_class = "C_OP_Decay"
 			m_nOpEndCapState = 1
 		},
@@ -33,9 +36,6 @@
 			m_nSpinRateDegrees = 20
 		},
 		{
-			_class = "C_OP_BasicMovement"
-		},
-		{
 			_class = "C_OP_ColorInterpolateRandom"
 			m_ColorFadeMin = [ 246, 138, 138, 255 ]
 			m_ColorFadeMax = [ 244, 165, 91, 255 ]
@@ -45,8 +45,8 @@
 	[
 		{
 			_class = "C_INIT_RandomLifeTime"
-			m_fLifetimeMax = 0.2
-			m_fLifetimeMin = 0.2
+			m_fLifetimeMax = 1.0
+			m_fLifetimeMin = 1.0
 		},
 		{
 			_class = "C_INIT_RandomSequence"
@@ -71,6 +71,7 @@
 		},
 		{
 			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMax = 1.0
 		},
 		{
 			_class = "C_INIT_RandomColor"
@@ -81,8 +82,7 @@
 	m_Emitters = 
 	[
 		{
-			_class = "C_OP_ContinuousEmitter"
-			m_flEmitRate = 80.0
+			_class = "C_OP_NoiseEmitter"
 		},
 	]
 	m_controlPointConfigurations = 
@@ -92,4 +92,16 @@
 		},
 	]
 	m_nMaxParticles = 1
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/heroes/lora/fireball_fire_glow.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/lora/fireball_fire_ember.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/lora/camp_fire_c.vpcf"
+		},
+	]
 }
