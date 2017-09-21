@@ -103,7 +103,7 @@
 	[
 		{
 			m_bEndCap = true
-			m_ChildRef = resource:"particles/cog_test_endcap.vpcf"
+			m_ChildRef = resource:"particles/heroes/ti_15/protective_gear_endcap.vpcf"
 		},
 	]
 	m_controlPointConfigurations = 

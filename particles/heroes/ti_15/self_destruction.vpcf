@@ -67,7 +67,7 @@
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/self_destruction_2.vpcf"
+			m_ChildRef = resource:"particles/heroes/ti_15/self_destruction_2.vpcf"
 		},
 		{
 			m_ChildRef = resource:"particles/econ/items/gyrocopter/hero_gyrocopter_gyrotechnics/gyro_guided_missile_target_c.vpcf"
