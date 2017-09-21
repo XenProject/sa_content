@@ -46,7 +46,8 @@
 	m_Emitters = 
 	[
 		{
-			_class = "C_OP_InstantaneousEmitter"
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 30.0
 		},
 	]
 	m_Children = 
