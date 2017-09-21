@@ -40,6 +40,9 @@
 			m_ColorFadeMin = [ 246, 138, 138, 255 ]
 			m_ColorFadeMax = [ 244, 165, 91, 255 ]
 		},
+		{
+			_class = "C_OP_PositionLock"
+		},
 	]
 	m_Initializers = 
 	[
