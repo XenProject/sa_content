@@ -32,6 +32,9 @@
 			_class = "C_OP_SpinYaw"
 			m_nSpinRateDegrees = 20
 		},
+		{
+			_class = "C_OP_BasicMovement"
+		},
 	]
 	m_Initializers = 
 	[
