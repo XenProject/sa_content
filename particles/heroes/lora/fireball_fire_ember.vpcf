@@ -71,7 +71,6 @@
 		},
 		{
 			_class = "C_INIT_CreateWithinSphere"
-			m_nControlPointNumber = 3
 			m_fSpeedMax = 150.0
 			m_fSpeedMin = 100.0
 			m_fRadiusMax = 16.0
@@ -95,22 +94,6 @@
 		{
 			_class = "C_OP_ContinuousEmitter"
 			m_flEmitRate = 80.0
-		},
-	]
-	m_ForceGenerators = 
-	[
-		{
-			_class = "C_OP_AttractToControlPoint"
-			m_nControlPointNumber = 1
-			m_flOpEndFadeOutTime = 0.2
-			m_fFalloffPower = 0.0
-			m_fForceAmount = -2000.0
-		},
-		{
-			_class = "C_OP_AttractToControlPoint"
-			m_fForceAmount = -4000.0
-			m_fFalloffPower = 0.1
-			m_flOpEndFadeOutTime = 0.2
 		},
 	]
 	m_controlPointConfigurations = 

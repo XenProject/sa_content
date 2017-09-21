@@ -29,10 +29,6 @@
 			_class = "C_OP_SpinUpdate"
 		},
 		{
-			_class = "C_OP_PositionLock"
-			m_nControlPointNumber = 2
-		},
-		{
 			_class = "C_OP_SpinYaw"
 			m_nSpinRateDegrees = 20
 		},
@@ -46,7 +42,6 @@
 		},
 		{
 			_class = "C_INIT_CreateWithinSphere"
-			m_nControlPointNumber = 2
 		},
 		{
 			_class = "C_INIT_RandomSequence"

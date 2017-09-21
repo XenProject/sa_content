@@ -16,31 +16,13 @@
 			m_bDisableZBuffering = true
 			m_hTexture = resource:"materials/particle/particle_flares/particle_flare_004.vtex"
 			m_flMaxSize = 0.25
+			m_bDisableOperator = true
 		},
 	]
 	m_Operators = 
 	[
 		{
 			_class = "C_OP_BasicMovement"
-		},
-		{
-			_class = "C_OP_MaxVelocity"
-			m_flMaxVelocity = 600.0
-			m_nOverrideCP = 2
-		},
-		{
-			_class = "C_OP_CPOffsetToPercentageBetweenCPs"
-			m_bScaleOffset = true
-			m_flInputBias = 0.25
-			m_vecOffset = [ 0.0, 0.0, 0.25 ]
-			m_nOffsetCP = 1
-			m_flInputMax = 0.0
-			m_flInputMin = 1.0
-		},
-		{
-			_class = "C_OP_SetControlPointsToParticle"
-			m_bSetOrientation = true
-			m_nFirstControlPoint = 3
 		},
 		{
 			_class = "C_OP_EndCapTimedDecay"
@@ -66,15 +48,6 @@
 		{
 			_class = "C_OP_InstantaneousEmitter"
 			m_nParticlesToEmit = 1
-		},
-	]
-	m_ForceGenerators = 
-	[
-		{
-			_class = "C_OP_AttractToControlPoint"
-			m_nControlPointNumber = 4
-			m_fFalloffPower = 0.0
-			m_fForceAmount = 1000000.0
 		},
 	]
 	m_Children = 
