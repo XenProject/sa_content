@@ -35,6 +35,11 @@
 		{
 			_class = "C_OP_BasicMovement"
 		},
+		{
+			_class = "C_OP_ColorInterpolateRandom"
+			m_ColorFadeMin = [ 246, 138, 138, 255 ]
+			m_ColorFadeMax = [ 244, 165, 91, 255 ]
+		},
 	]
 	m_Initializers = 
 	[
@@ -45,6 +50,9 @@
 		},
 		{
 			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMax = 1.0
+			m_LocalCoordinateSystemSpeedMin = [ -5.0, 0.0, 0.0 ]
+			m_LocalCoordinateSystemSpeedMax = [ -5.0, 0.0, 0.0 ]
 		},
 		{
 			_class = "C_INIT_RandomSequence"
@@ -71,8 +79,8 @@
 	m_Emitters = 
 	[
 		{
-			_class = "C_OP_InstantaneousEmitter"
-			m_nParticlesToEmit = 1
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 30.0
 		},
 	]
 	m_controlPointConfigurations = 
