@@ -49,12 +49,6 @@
 			m_fLifetimeMin = 0.2
 		},
 		{
-			_class = "C_INIT_CreateWithinSphere"
-			m_fRadiusMax = 1.0
-			m_LocalCoordinateSystemSpeedMin = [ -5.0, 0.0, 0.0 ]
-			m_LocalCoordinateSystemSpeedMax = [ -5.0, 0.0, 0.0 ]
-		},
-		{
 			_class = "C_INIT_RandomSequence"
 			m_nSequenceMax = 4
 		},
@@ -75,12 +69,20 @@
 			_class = "C_INIT_RandomRotation"
 			m_nFieldOutput = 12
 		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [ 214, 42, 0, 255 ]
+			m_ColorMax = [ 216, 187, 2, 255 ]
+		},
 	]
 	m_Emitters = 
 	[
 		{
 			_class = "C_OP_ContinuousEmitter"
-			m_flEmitRate = 30.0
+			m_flEmitRate = 80.0
 		},
 	]
 	m_controlPointConfigurations = 
