@@ -15,7 +15,7 @@
 					m_model = resource:"models/items/oracle/ti7_immortal_weapon/oracle_ti7_immortal_fxmodel.vmdl"
 				},
 			]
-			m_hOverrideMaterial = resource:"materials/models/particle/sphere_fire2.vmat"
+			m_hOverrideMaterial = resource:"materials/models/projectiles/ground_spike_molten.vmat"
 			m_bIgnoreNormal = true
 		},
 	]
@@ -57,8 +57,6 @@
 		},
 		{
 			_class = "C_INIT_RandomRadius"
-			m_flRadiusMin = 0.7
-			m_flRadiusMax = 0.8
 		},
 		{
 			_class = "C_INIT_RandomRotationSpeed"
