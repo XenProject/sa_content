@@ -106,32 +106,32 @@
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/elay_energy_ball_c.vpcf"
+			m_ChildRef = resource:"particles/heroes/elay/elay_energy_ball_c.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/elay_energy_ball_i.vpcf"
+			m_ChildRef = resource:"particles/heroes/elay/elay_energy_ball_i.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/elay_energy_ball_h.vpcf"
+			m_ChildRef = resource:"particles/heroes/elay/elay_energy_ball_h.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/elay_energy_ball_g.vpcf"
+			m_ChildRef = resource:"particles/heroes/elay/elay_energy_ball_g.vpcf"
 		},
 		{
 			m_bEndCap = true
-			m_ChildRef = resource:"particles/elay_energy_ball_f.vpcf"
+			m_ChildRef = resource:"particles/heroes/elay/elay_energy_ball_f.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/elay_energy_ball_e.vpcf"
+			m_ChildRef = resource:"particles/heroes/elay/elay_energy_ball_e.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/elay_energy_ball_b.vpcf"
+			m_ChildRef = resource:"particles/heroes/elay/elay_energy_ball_b.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/elay_energy_ball_d.vpcf"
+			m_ChildRef = resource:"particles/heroes/elay/elay_energy_ball_d.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/elay_energy_ball_a.vpcf"
+			m_ChildRef = resource:"particles/heroes/elay/elay_energy_ball_a.vpcf"
 		},
 	]
 	m_controlPointConfigurations = 
