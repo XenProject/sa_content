@@ -74,7 +74,6 @@
 			m_vecDistanceBiasAbs = [ 0.0, 0.0, 1.0 ]
 			m_fSpeedMin = 100.0
 			m_fSpeedMax = 150.0
-			m_nControlPointNumber = 3
 		},
 		{
 			_class = "C_INIT_InitialVelocityNoise"
@@ -105,7 +104,6 @@
 			m_fForceAmount = -2000.0
 			m_fFalloffPower = 0.0
 			m_flOpEndFadeOutTime = 0.2
-			m_nControlPointNumber = 3
 		},
 		{
 			_class = "C_OP_AttractToControlPoint"

@@ -54,7 +54,6 @@
 			m_LocalCoordinateSystemSpeedMax = [ -240.0, 0.0, 0.0 ]
 			m_LocalCoordinateSystemSpeedMin = [ -230.0, 0.0, 0.0 ]
 			m_fSpeedMax = 100.0
-			m_nControlPointNumber = 3
 		},
 		{
 			_class = "C_INIT_RandomRadius"

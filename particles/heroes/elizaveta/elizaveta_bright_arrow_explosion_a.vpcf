@@ -9,8 +9,8 @@
 		{
 			_class = "C_OP_RenderSprites"
 			m_nSequenceCombineMode = "SEQUENCE_COMBINE_MODE_USE_SEQUENCE_0"
-			m_flStartFadeSize = 0.4
-			m_flEndFadeSize = 0.65
+			m_flStartFadeSize = 1.0
+			m_flEndFadeSize = 1.4
 			m_hTexture = resource:"materials/particle/smoke1/smoke1.vtex"
 			m_flAnimationRate = 1.25
 		},
@@ -48,7 +48,6 @@
 		},
 		{
 			_class = "C_INIT_CreateWithinSphere"
-			m_nControlPointNumber = 3
 			m_fSpeedMax = 400.0
 			m_LocalCoordinateSystemSpeedMax = [ -40.0, 0.0, 0.0 ]
 		},
