@@ -32,7 +32,6 @@
 		},
 		{
 			_class = "C_OP_InterpolateRadius"
-			m_nOpEndCapState = 0
 			m_flStartScale = 0.0
 			m_flBias = 0.85
 		},
@@ -45,15 +44,14 @@
 			m_flFadeEndTime = 0.5
 		},
 		{
-			_class = "C_OP_SetToCP"
-			m_vecOffset = [ 0.0, 0.0, 16.0 ]
-		},
-		{
 			_class = "C_OP_Decay"
 		},
 		{
 			_class = "C_OP_FadeOutSimple"
 			m_flFadeOutTime = 1.0
+		},
+		{
+			_class = "C_OP_PositionLock"
 		},
 	]
 	m_Initializers = 
@@ -64,7 +62,14 @@
 			m_fLifetimeMax = 1.0
 		},
 		{
-			_class = "C_INIT_CreateWithinSphere"
+			_class = "C_INIT_RemapCPtoScalar"
+			m_nCPInput = 1
+			m_flInputMax = 9999.0
+			m_flOutputMax = 9999.0
+		},
+		{
+			_class = "C_INIT_RingWave"
+			m_nOverrideCP = 1
 		},
 	]
 	m_Emitters = 

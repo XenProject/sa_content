@@ -20,7 +20,7 @@
 		{
 			_class = "C_OP_BasicMovement"
 			m_fDrag = 0.1
-			m_Gravity = [ 0.0, 0.0, -1250.0 ]
+			m_Gravity = [ 0.0, 0.0, -500.0 ]
 		},
 		{
 			_class = "C_OP_InterpolateRadius"
@@ -62,8 +62,8 @@
 		},
 		{
 			_class = "C_INIT_RandomRadius"
-			m_flRadiusMin = 7.0
-			m_flRadiusMax = 15.0
+			m_flRadiusMin = 25.0
+			m_flRadiusMax = 25.0
 		},
 		{
 			_class = "C_INIT_CreateWithinSphere"
