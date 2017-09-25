@@ -17,6 +17,7 @@
 			m_bSaturateColorPreAlphaBlend = false
 			m_hTexture = resource:"materials/particle/rune/witch_rune.vtex"
 			m_flAnimationRate = 1.0
+			m_nOrientationType = 2
 		},
 	]
 	m_Operators = 
@@ -28,9 +29,6 @@
 			_class = "C_OP_InterpolateRadius"
 			m_flBias = 0.85
 			m_flStartScale = 0.0
-		},
-		{
-			_class = "C_OP_LockToBone"
 		},
 		{
 			_class = "C_OP_Decay"
@@ -45,7 +43,7 @@
 		},
 		{
 			_class = "C_OP_SetToCP"
-			m_vecOffset = [ 0.0, 0.0, 18.0 ]
+			m_vecOffset = [ 0.0, 0.0, 16.0 ]
 		},
 	]
 	m_Initializers = 
@@ -57,8 +55,8 @@
 		},
 		{
 			_class = "C_INIT_RandomLifeTime"
-			m_fLifetimeMin = 0.35
-			m_fLifetimeMax = 0.35
+			m_fLifetimeMin = 1.0
+			m_fLifetimeMax = 1.0
 		},
 		{
 			_class = "C_INIT_RandomRadius"
@@ -78,6 +76,7 @@
 		},
 		{
 			_class = "C_INIT_RingWave"
+			m_nOverrideCP = 1
 		},
 	]
 	m_Emitters = 
