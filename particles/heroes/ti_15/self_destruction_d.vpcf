@@ -78,7 +78,6 @@
 			m_bSetNormal = true
 			m_flMaxTraceLength = 512.0
 			m_CollisionGroupName = "DEBRIS"
-			m_bDisableOperator = true
 		},
 		{
 			_class = "C_INIT_RandomRotation"
