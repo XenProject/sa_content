@@ -136,4 +136,10 @@
 			]
 		},
 	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/heroes/garp/garp_spear_burst_a.vpcf"
+		},
+	]
 }
