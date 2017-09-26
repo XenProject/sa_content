@@ -6,7 +6,7 @@
 		"CDmeInputTexture"
 		{
 			"m_name" "string" "0"
-			"m_fileName" "string" "materials/models/heroes/crystal_maiden/cm_arcana_color_psd_7cb92ed0.tga"
+			"m_fileName" "string" "materials/models/heroes/crystal_maiden/1.tga"
 			"m_colorSpace" "string" "srgb"
 			"m_typeString" "string" "2D"
 		}
