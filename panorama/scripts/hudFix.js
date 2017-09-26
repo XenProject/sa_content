@@ -25,7 +25,7 @@
 	dotaHud.FindChildTraverse("PreGame").FindChildTraverse("TeamPurchasesStrategyControl").style.visibility = "collapse";
 
 	var onUpdateHeroSelection = function(data) {
-		--$.Msg(data)
+		//$.Msg(data)
 		var heroPickAbi = dotaHud.FindChildTraverse("PreGame").FindChildTraverse("HeroPickScreen").FindChildTraverse("HeroAbilities")
 		for (var panel of heroPickAbi.Children()) {
 			if ( panel.BHasClass("StatBranch") )
@@ -38,17 +38,29 @@
 			heroPickAbi.MoveChildBefore(ultAbi,plusAbi)
 	}
 
-	var test = function(data){
-		$.Msg("test")
+	var onStrategyScreen = function(){
+		var heroPickedAbi = dotaHud.FindChildTraverse("PreGame").FindChildTraverse("StrategyScreen").FindChildTraverse("SelectedHeroAbilities")
+		for (var panel of heroPickedAbi.Children()) {
+			if ( panel.BHasClass("StatBranch") )
+				panel.style.visibility = "collapse";
+		}
+		heroPickedAbi = dotaHud.FindChildTraverse("PreGame").FindChildTraverse("StrategyScreen").FindChildTraverse("SelectedHeroAbilitiesHitTargets")
+		var panel = heroPickedAbi.GetChild( heroPickedAbi.GetChildCount() - 1 )
+		panel.style.visibility = "collapse";
+	}
+
+	var test = function(){
+		$.Msg("TEST!!!!!!!!!!!!!\n\n")
 	}
 
 	GameEvents.Subscribe( "dota_player_hero_selection_dirty", onUpdateHeroSelection );
 
-	GameEvents.Subscribe( "dota_player_update_assigned_hero", test );
+	GameEvents.Subscribe( "StrategyScreen", onStrategyScreen );
+
+	//GameEvents.Subscribe( "dota_player_update_hero_selection", onStrategyScreen );
 
     
-	/*var randomHeroButton = dotaHud.FindChildTraverse("PreGame").FindChildTraverse("StrategyScreen").FindChildTraverse("SelectedHeroAbilitiesHitTargets")
-	randomHeroButton.style.saturation = 1
+	/*randomHeroButton.style.saturation = 1
 	randomHeroButton.style.brightness = 1
 	randomHeroButton.SetPanelEvent("onactivate", function() { GameEvents.SendCustomGameEventToServer( "lia_random_hero", {} ) } )
 	randomHeroButton.SetPanelEvent("onmouseover", 
