@@ -10,8 +10,9 @@
 		{
 			_class = "C_OP_RenderSprites"
 			m_nSequenceCombineMode = "SEQUENCE_COMBINE_MODE_USE_SEQUENCE_0"
-			m_hTexture = resource:"materials/particle/smoke/static/static_smoke.vtex"
+			m_hTexture = resource:"materials/particle/smoke/nebula/smoke_nebula.vtex"
 			m_flAnimationRate = 1.16
+			m_nOrientationType = 2
 		},
 	]
 	m_Operators = 
@@ -97,6 +98,12 @@
 			_class = "C_INIT_RandomRotationSpeed"
 			m_flDegreesMin = 5.0
 			m_flDegreesMax = 35.0
+		},
+		{
+			_class = "C_INIT_RemapCPtoScalar"
+			m_nCPInput = 4
+			m_flInputMax = 9999.0
+			m_flOutputMax = 9999.0
 		},
 	]
 	m_Emitters = 
