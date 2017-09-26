@@ -39,13 +39,15 @@
 		{
 			_class = "C_OP_InterpolateRadius"
 			m_flBias = 0.85
-			m_flStartScale = 0.1
-			m_flEndTime = 0.4
+			m_flStartScale = 0.3
+			m_flEndTime = 0.6
+			m_flEndScale = 2.0
 		},
 		{
 			_class = "C_OP_InterpolateRadius"
-			m_flEndScale = 1.5
+			m_flEndScale = 2.0
 			m_flStartTime = 0.6
+			m_flEndTime = 2.0
 		},
 	]
 	m_Initializers = 
@@ -76,8 +78,8 @@
 		},
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMin = [ 152, 115, 99, 255 ]
-			m_ColorMax = [ 185, 170, 140, 255 ]
+			m_ColorMin = [ 157, 57, 14, 255 ]
+			m_ColorMax = [ 189, 145, 58, 255 ]
 		},
 	]
 	m_Emitters = 
