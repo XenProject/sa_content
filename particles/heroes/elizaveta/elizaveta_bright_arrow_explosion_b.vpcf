@@ -18,7 +18,7 @@
 			m_flOverbrightFactor = 2.0
 			m_flAddSelfAmount = 1.0
 			m_bSaturateColorPreAlphaBlend = false
-			m_hTexture = resource:"materials/particle/fire_particle_4/blue_particle_4.vtex"
+			m_hTexture = resource:"materials/particle/fluidexplosions/fluidexplosion.vtex"
 			m_flAnimationRate = 1.0
 			m_bAdditive = true
 		},
@@ -37,7 +37,6 @@
 		},
 		{
 			_class = "C_OP_Decay"
-			m_nOpEndCapState = 0
 		},
 		{
 			_class = "C_OP_ColorInterpolate"
@@ -80,8 +79,8 @@
 	[
 		{
 			_class = "C_INIT_RandomLifeTime"
-			m_fLifetimeMin = 0.75
-			m_fLifetimeMax = 1.5
+			m_fLifetimeMin = 0.5
+			m_fLifetimeMax = 0.6
 		},
 		{
 			_class = "C_INIT_RandomRadius"
@@ -116,7 +115,12 @@
 	[
 		{
 			_class = "C_OP_ContinuousEmitter"
-			m_flEmitRate = 32.0
+			m_flEmitRate = 20.0
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 20
 		},
 	]
 	m_controlPointConfigurations = 
@@ -142,4 +146,5 @@
 	]
 	m_flMaxDrawDistance = 2000.0
 	m_flNoDrawTimeToGoToSleep = 2.0
+	m_ConstantColor = [ 255, 255, 255, 88 ]
 }

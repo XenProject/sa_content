@@ -3,7 +3,7 @@
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
 	m_nMaxParticles = 4
-	m_ConstantColor = [ 6, 6, 6, 245 ]
+	m_ConstantColor = [ 6, 6, 6, 255 ]
 	m_Renderers = 
 	[
 		{
@@ -11,7 +11,7 @@
 			m_nSequenceCombineMode = "SEQUENCE_COMBINE_MODE_USE_SEQUENCE_0"
 			m_flStartFadeSize = 1.0
 			m_flEndFadeSize = 1.4
-			m_hTexture = resource:"materials/particle/smoke1/smoke1.vtex"
+			m_hTexture = resource:"materials/particle/fire_burning_character/bluefire_burning_character.vtex"
 			m_flAnimationRate = 1.25
 		},
 	]
@@ -36,7 +36,6 @@
 		},
 		{
 			_class = "C_OP_ColorInterpolate"
-			m_ColorFade = [ 255, 247, 223, 255 ]
 		},
 	]
 	m_Initializers = 
@@ -72,8 +71,8 @@
 		},
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMin = [ 77, 243, 255, 255 ]
-			m_ColorMax = [ 255, 255, 193, 255 ]
+			m_ColorMin = [ 146, 68, 0, 255 ]
+			m_ColorMax = [ 108, 39, 0, 255 ]
 		},
 	]
 	m_Emitters = 
