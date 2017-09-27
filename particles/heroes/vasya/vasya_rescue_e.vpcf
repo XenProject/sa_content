@@ -91,7 +91,7 @@
 		{
 			_class = "C_OP_ContinuousEmitter"
 			m_flEmitRate = 65.0
-			m_flEmissionDuration = 3.5
+			m_flEmissionDuration = 0.8
 		},
 	]
 	m_ForceGenerators = 

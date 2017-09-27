@@ -45,7 +45,7 @@
 		},
 		{
 			_class = "C_OP_MovementRotateParticleAroundAxis"
-			m_flRotRate = 10.0
+			m_flRotRate = 30.0
 		},
 	]
 	m_Initializers = 
@@ -57,8 +57,8 @@
 		},
 		{
 			_class = "C_INIT_RandomLifeTime"
-			m_fLifetimeMax = 5.25
-			m_fLifetimeMin = 5.25
+			m_fLifetimeMax = 1.0
+			m_fLifetimeMin = 1.0
 		},
 		{
 			_class = "C_INIT_RandomRadius"
