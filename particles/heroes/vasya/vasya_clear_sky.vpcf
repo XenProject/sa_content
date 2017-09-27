@@ -128,4 +128,10 @@
 			]
 		},
 	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/heroes/vasya/vasya_clear_sky_a.vpcf"
+		},
+	]
 }
