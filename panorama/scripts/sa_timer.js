@@ -68,7 +68,6 @@ function StopTimer()
 		$.CancelScheduled(schedule)
 	schedule = null
 	$("#TimerContainer").AddClass("Hidden")
-	GameEvents.SendCustomGameEventToServer("timer_end", {} );
 }
 
 function NewEndTime(data)
