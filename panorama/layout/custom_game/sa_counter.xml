@@ -1,0 +1,17 @@
+<root>
+    <styles>
+ 		<include src="file://{resources}/styles/dotastyles.css" />
+        <include src="file://{resources}/styles/sa_counter.css" />
+    </styles>
+
+    <scripts>
+    	<include src="file://{resources}/scripts/sa_counter.js" />
+    </scripts>
+
+	<Panel hittest="false" class="SaCounter">
+		<Panel id="Container" >
+			<ProgressBar id="CounterProgressBar" value="0.5"/>
+			<Label id="Counter" text="Осталось " />
+		</Panel>
+	</Panel>
+</root>
